@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@media (max-width:614px) {
+  body {
+    width: 100%;
+  }
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #EEEEEE;
+}
+
+.topo {
+    background-color: #CF2B2B;
+    color: #FFFFFF;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    box-shadow:  3px 3px 3px #888888;
+}
+
+.drivenEats {
+    margin-left: 20px;
+}
+
+.drivenEats h5 {
+    font-weight: 360;
+    font-size: 17px;
+}
+
+.topo h1 {
+    font-size: 45px;
+}
+.titulo {
+    font-family: "Righteous", sans-serif;
+}
+
+.container {
+    margin-left: 20px;
+}
+
+.pratoPrincipal {
+    display: flex;
+}
+
+.img {
+    width: 150px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.refeicao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    width: 150px;
+    height: 200px;
+}
+
+.refeicao h4 {
+    font-weight: bold;
+}
+
+.refeicao h6 {
+    font-weight: 100;
+    font-size: 14px;
+    color: gray;
+}
+
+.refeicao p {
+    font-weight: 450;
+}
+
+.bebidas { 
+    display: flex;
+}
+
+.containerPratoPrincipal {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.container h1 {
+    color: #333333;
+    font-size: 28px;
+}
+
+.pratoPrincipal {
+    margin-top: 10px;
+}
+
