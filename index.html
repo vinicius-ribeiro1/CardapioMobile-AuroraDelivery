@@ -18,55 +18,78 @@
         <div class="containerPratoPrincipal">
             <h1 class="titulo">Primeiro, seu prato</h1>
             <div class="pratoPrincipal">
-                <div class="refeicao">
-                    <img src="imagens/strogonoff.png" alt="" class="img">
-                    <h4>Strogonoff de Frango</h4>
-                    <h6>Frango, batata palha e arroz</h6>
-                    <p>R$ 20,00</p>
+                <div class="refeicao" onclick="toggleComida(this)">
+                    <img src="imagens/strogonoff.jpg" alt="" class="img">
+                    <h3>Strogonoff de Frango</h3>
+                    <p>Frango, batata palha e arroz</p>
+                    <span class="preco">R$ 20,00</span>
                 </div>
-                <div class="refeicao">
-                    <img src="imagens/strogonoff.png" alt="" class="img">
-                    <h4>Strogonoff de Carne</h4>
-                    <h6>Carne, batata palha e arroz</h6>
-                    <p>R$ 40,00</p>
+                <div class="refeicao" onclick="toggleComida(this)">
+                    <img src="imagens/strogonoff.jpg" alt="" class="img">
+                    <h3>Strogonoff de Carne</h3>
+                    <p>Carne, batata palha e arroz</p>
+                    <span class="preco">R$ 40,00</span>
                 </div>
-                <div class="refeicao">
-                    <img src="imagens/strogonoff.png" alt="" class="img">
-                    <h4>Strogonoff de Camarão</h4>
-                    <h6>Camarão, batata palha e arroz</h6>
-                    <p>R$ 60,00</p>
+                <div class="refeicao" onclick="toggleComida(this)">
+                    <img src="imagens/strogonoff.jpg" alt="" class="img">
+                    <h3>Strogonoff de Camarão</h3>
+                    <p>Camarão, batata palha e arroz</p>
+                    <span class="preco">R$ 60,00</span>
                 </div>
             </div>
         </div>
-        <div class="containerBebidas">
+        <div class="containerPratoPrincipal">
             <h1 class="titulo">Agora, sua bebida</h1>
-            <div class="bebidas">
-                <div class="bebida">
+            <div class="pratoPrincipal">
+                <div class="refeicao" onclick="toggleBebida(this)">
                     <img src="imagens/lata.png" alt="" class="img">
-                    <h4>Refri Lata</h4>
-                    <h6>350ml</h6>
-                    <p>R$ 5,00</p>
+                    <h3>Refri Pequeno</h3>
+                    <p>350ml</p>
+                    <span class="preco">R$ 5,00</span>
                 </div>
-                <div class="bebida">
+                <div class="refeicao" onclick="toggleBebida(this)">
                     <img src="imagens/600ml.png" alt="" class="img">
-                    <h4>Refri 600ml</h4>
-                    <h6>600ml</h6>
-                    <p>R$ 7,00</p>
+                    <h3>Refri Médio</h3>
+                    <p>600ml</p>
+                    <span class="preco">R$ 7,00</span>
                 </div>
-                <div class="bebida">
+                <div class="refeicao" onclick="toggleBebida(this)">
                     <img src="imagens/2L.png" alt="" class="img">
-                    <h4>Refri 2L<h4>
-                    <h6>2L</h6>
-                    <p>R$ 9,00</p>
+                    <h3>Refri Grande</h3>
+                    <p>2 Litros</p>
+                    <span class="preco">R$ 9,00</span>
                 </div>
             </div>
         </div>
-        <div class="sobremesa">
+        <div class="containerPratoPrincipal">
             <h1 class="titulo">Por fim, sua sobremesa</h1>
+            <div class="pratoPrincipal">
+                <div class="refeicao" onclick="toggleSobremesa(this)">
+                    <img src="imagens/bolo.png" alt="" class="img">
+                    <h3>Bolo chocolate</h3>
+                    <p>Fatia</p>
+                    <span class="preco">R$ 10,00</span>
+                </div>
+                <div class="refeicao" onclick="toggleSobremesa(this)">
+                    <img src="imagens/bolo.png" alt="" class="img">
+                    <h3>Bolo brigadeiro</h3>
+                    <p>Fatia</p>
+                    <span class="preco">R$ 15,00</span>
+                </div>
+                <div class="refeicao" onclick="toggleSobremesa(this)">
+                    <img src="imagens/bolo.png" alt="" class="img">
+                    <h3>Bolo Nutella</h3>
+                    <p>Fatia</p>
+                    <span class="preco">R$ 20,00</span>
+                </div>
+            </div>
         </div>
     </div>
     <div class="fecharPedido">
-        <button>Selecione os 3 itens para fechar o pedido</button>
+        <button class="botaoFecharPedido" onclick="fazerPedido()">
+            <span class="verde">Selecione os 3 itens<br> para fechar o pedido</span>
+        </button>
     </div>
+    <script src="drivenEats.js"></script>
 </body>
 </html>
