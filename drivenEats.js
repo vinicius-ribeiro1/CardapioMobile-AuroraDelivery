@@ -1,37 +1,16 @@
 let itensSelecionados = 0;
 
-function toggleComida(comidaEscolhida) {
-    let refSelecionada = document.querySelector(".selecionado");
+function toggleItem(itemEscolhido, seletor) {
+    let refSelecionada = document.querySelector("." + seletor);
     if (refSelecionada !== null) {
-        refSelecionada.classList.toggle("selecionado");
+        refSelecionada.classList.toggle(seletor);
         itensSelecionados = itensSelecionados - 1;
     }
-    comidaEscolhida.classList.add("selecionado");
+    itemEscolhido.classList.add(seletor);
     itensSelecionados = itensSelecionados + 1;
     fecharPedido(itensSelecionados);
 }
 
-function toggleBebida(bebidaEscolhida) {
-    let drinkSelecionada = document.querySelector(".selecionada");
-    if (drinkSelecionada !== null) {
-        drinkSelecionada.classList.toggle("selecionada");
-        itensSelecionados = itensSelecionados - 1;
-    }
-    bebidaEscolhida.classList.add("selecionada");
-    itensSelecionados = itensSelecionados + 1;
-    fecharPedido(itensSelecionados);
-}
-
-function toggleSobremesa(sobremesaEscolhida) {
-    let desertSelecionada = document.querySelector(".selecionadoo");
-    if (desertSelecionada !== null) {
-        desertSelecionada.classList.toggle("selecionadoo");
-        itensSelecionados = itensSelecionados - 1;
-    }
-    sobremesaEscolhida.classList.add("selecionadoo");
-    itensSelecionados = itensSelecionados + 1;
-    fecharPedido(itensSelecionados);  
-}
 
 function fecharPedido(itensSelecionados) {
     if (itensSelecionados === 3) {
